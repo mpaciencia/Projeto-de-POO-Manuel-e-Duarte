@@ -1,0 +1,3 @@
+Top 10 players:
+Player : s, Time : 39, Moves : 105
+Player : po, Time : 44, Moves : 118
