@@ -1,4 +1,3 @@
-# Projeto de POO Manuel e Duarte
 ============================================================
  PROJETO DE POO - STRANGER THINGS EDITION
 ============================================================
@@ -10,9 +9,8 @@ AUTORES:
 ------------------------------------------------------------
 1. MUDANÇA DE TEMA (RE-SKIN)
 ------------------------------------------------------------
-Jogo inspirado no clássico de arcade FishFillets NG
 Para este projeto, decidimos adaptar o jogo ao universo da série 
-"Stranger Things". Mudámos as imagens e os nomes para bater certo 
+"Stranger Things". Mudámos as imagens e os nomes para corresponderem
 com a história:
 
 PERSONAGENS:
@@ -44,11 +42,11 @@ Seguindo as opções do enunciado, implementámos o seguinte comportamento:
   (ou se cair uma em cima dele), é Game Over imediato.
 
 B) MECÂNICA DE RESGATE (NUMBER 8)
-Criámos isto especificamente para o nosso Nível 3 (Kali/008):
+Criámos esta personagem especificamente para o nosso Nível 3 (Kali/008):
 - Só a Eleven consegue interagir com ela.
 - Quando a Eleven toca na posição da Kali, ela é "salva". Ao ser 
-  resgatada, ela desaparece e limpa todos os objetos à volta 
-  (cima, baixo, esquerda, direita) para abrir caminho.
+  resgatada, ela desaparece e limpa todos os objetos em cima e à direita 
+  para abrir caminho.
 
 C) PONTUAÇÃO (HIGH SCORE)
 Para o top de pontuações, definimos estas prioridades:
@@ -70,7 +68,7 @@ que era a melhor solução por três motivos:
 1. Polimorfismo mais limpo:
    O GameEngine não precisa de saber se o objeto é uma Pedra ou uma 
    Âncora. Só precisa de perguntar "if (obj instanceof Heavy)". 
-   Isto limpa imenso o código de verificações desnecessárias.
+   Isto limpa o código de verificações desnecessárias.
 
 2. Fácil de expandir:
    Se quisermos criar um objeto novo amanhã, basta implementar as 
@@ -80,6 +78,6 @@ que era a melhor solução por três motivos:
 3. Organização:
    Em vez de encher a classe GameObject de variáveis booleanas 
    (tipo isHeavy, isSmall, etc.) que nem todos usam, preferimos 
-   usar interfaces para definir os Tipos de cada objeto.
+   usar interfaces para definir os tipos de cada objeto.
 
 ============================================================
